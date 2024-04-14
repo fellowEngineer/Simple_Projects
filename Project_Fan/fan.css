@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #258258;
+}
+
+
+
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px; 
+    height: 200px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+
+
+.fan{
+    border: 1px solid black;    
+}
+
+.fanBackCover{
+    position: absolute;
+    top: 21.7%;
+    left: 38.7%;
+    height: 250px;
+    width: 250px; 
+    z-index: -2;
+}
+
+.fanBody{
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    height: 300px;
+    width: 300px; 
+    z-index: -1;
+}
+
+#fanBlade{
+    position: absolute;
+    top: 25.7%;
+    left: 40.8%;
+    height: 200px;
+    width: 200px; 
+    z-index: 0;
+}
+
+.fanFrontCover{
+    position: absolute;
+    top: 21.7%;
+    left: 38.7%;
+    height: 252px;
+    width: 252px; 
+    transform:rotate(20deg); 
+    z-index: 1;
+}
+
+.but{
+    position: absolute;
+    top: 78%;
+    left: 42.5%;
+}
+
+#onoff, #slow, #medium, #high{
+    font-size: 20px;
+    width: 20px;
+}
+
+
+#onoff{
+    width: 80px;
+}
+
+/* .onoff,.slow,.medium,.high{
+    font-size: 20px;
+    width: 20px;
+}
+
+
+.onoff{
+    width: 80px;
+} */
+
+
+.fanOn{
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+.fanOne{
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+}
+.fanTwo{
+    -webkit-animation:spin 0.5s linear infinite;
+    -moz-animation:spin 0.5s linear infinite;
+    animation:spin 0.5s linear infinite;
+}
+.fanThree{
+    -webkit-animation:spin 0.3s linear infinite;
+    -moz-animation:spin 0.3s linear infinite;
+    animation:spin 0.3s linear infinite;
+}
